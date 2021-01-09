@@ -18,8 +18,6 @@ class FlattenTree {
     }
   }
 
-  private TreeNode prev = null;
-
   public void flatten(TreeNode root) {
     if (root == null)
       return;
@@ -38,5 +36,17 @@ class FlattenTree {
       curr.right = temp;
     }
     flatten(root.right);
+  }
+
+  private TreeNode prev = null;
+
+  public void flatten2(TreeNode root) {
+    if (root == null)
+      return;
+    flatten2(root.right);
+    flatten2(root.left);
+    root.right = prev;
+    root.left = null;
+    prev = root;
   }
 }

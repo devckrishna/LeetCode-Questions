@@ -1,3 +1,5 @@
+package StacksAndQueues;
+
 class MinCostTreeFromLeafValues {
   public int mctFromLeafValues(int[] arr) {
     int[] sum = new int[1];

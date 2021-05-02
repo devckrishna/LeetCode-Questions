@@ -15,7 +15,7 @@ public class BlockSum {
 
     for (int i = 0; i < m; i++) {
       for (int j = 0; j < n; j++) {
-        int r1 = Math.max(0, i - K) + 1;
+        int r1 =Math.max(0, i - K) + 1;
         int c1 = Math.max(0, j - K) + 1;
         int r2 = Math.min(m, i + K + 1);
         int c2 = Math.min(n, j + K + 1);

@@ -1,4 +1,3 @@
-package StacksAndQueues;
 
 class MinCostTreeFromLeafValues {
   public int mctFromLeafValues(int[] arr) {

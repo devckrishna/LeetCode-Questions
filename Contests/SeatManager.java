@@ -6,7 +6,7 @@ public class SeatManager {
 
   public SeatManager(int n) {
     count = 1;
-    pq = new PriorityQueue();
+    pq = new PriorityQueue<>();
   }
 
   public int reserve() {

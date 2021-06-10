@@ -1,3 +1,5 @@
+package Tree;
+
 public class BSTFRomPreOrder {
   public static class TreeNode {
     int val;

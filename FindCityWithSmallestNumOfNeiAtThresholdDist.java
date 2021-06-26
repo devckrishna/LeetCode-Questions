@@ -9,9 +9,11 @@ public class FindCityWithSmallestNumOfNeiAtThresholdDist {
     for (int i = 0; i < n; i++) {
       graph[i][i] = 0;
     }
+
     for (int[] edge : edges) {
       graph[edge[0]][edge[1]] = graph[edge[1]][edge[0]] = edge[2];
     }
+
     int smallest = n;
     for (int k = 0; k < n; k++) {
       for (int i = 0; i < n; i++) {

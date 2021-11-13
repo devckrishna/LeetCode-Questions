@@ -1,6 +1,6 @@
 public class Third {
   public int minimumSize(int[] nums, int maxOperations) {
-    int start = 0;
+    int start = 1;
     int end = 1_000_000_000;
     while (start < end) {
       int mid = start + (end - start) / 2;

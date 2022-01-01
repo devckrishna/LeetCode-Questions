@@ -1,0 +1,15 @@
+Finding area of circle
+ A=πr2
+.model small
+.data
+ Radius dd 3.4
+ Area dd ?
+.code
+ Mov ax,@data
+ Mov ds,ax
+ Finit ;initialise 8087
+ Fld radius ;load radius in ST
+ Fmul st,st(0) ;square radius
+ Fldpi ;load π to ST
+ Fmul ;multiply ST = ST * ST(1)
+ Fstp area ;save area

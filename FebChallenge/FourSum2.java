@@ -1,5 +1,3 @@
-package FebChallenge;
-
 import java.util.*;
 
 public class FourSum2 {

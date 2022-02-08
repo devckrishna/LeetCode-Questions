@@ -1,9 +1,7 @@
 public class CountFertilePyramidsInLand {
   public int countPyramids(int[][] grid) {
-
     int n = grid.length;
     int m = grid[0].length;
-
     for (int i = 0; i < n; i++) {
       int count = 0;
       for (int j = 0; j < m; j++) {
@@ -23,7 +21,6 @@ public class CountFertilePyramidsInLand {
         }
         grid[i][j] = Math.min(grid[i][j], count);
       }
-
     }
     int ans = 0;
     for (int i = 0; i < n; i++) {

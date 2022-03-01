@@ -14,5 +14,6 @@ public class CountingBits {
       dp[i] = 1 + dp[i - power];
     }
     return dp;
+
   }
 }

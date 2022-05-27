@@ -3,7 +3,7 @@ public class WildCardMatching {
     boolean[][] dp = new boolean[p.length() + 1][s.length() + 1];
     dp[0][0] = true;
     for (int i = 1; i < dp.length; i++) {
-      dp[i][0] = p.charAt(i - 1) == '*' || dp[i - 1][0];
+      dp[i][0] = p.charAt(i - 1) == '*' && dp[i - 1][0];
     }
 
     for (int i = 1; i < dp.length; i++) {
